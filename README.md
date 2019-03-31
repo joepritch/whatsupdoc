@@ -17,9 +17,13 @@ The search API call uses the 'query' paramater of the 'doctor search' operation,
 
 Make sure you have Node.js installed!
 
+*You will need your own key for the BetterDoctor API - [CLick here](https://developer.betterdoctor.com/signup) to get started*
+
 * Clone or download this repo
 * Using the terminal or a console emulator, navigate to the project directory
-* Run the commands 'npm install', 'npm run build', 'npm run start' consecutively
+* Create a '.env' file in the root directory
+* Using a text editor, type "exports.apiKey = 'YOUR-API-KEY'" in the '.env' file and save it
+* Run the commands 'npm install' and 'npm run start' consecutively
 
 
 ## Specs
