@@ -7,9 +7,11 @@
 
 This project uses the BetterDoctor API to allow the user to search a keyword (medical conditions, doctor name, etc..) and view the first returned result.
 
-It is barebones in its current state and only displays on the first returned doctor. It has no custom CSS or styling. I focused solely on meeting the project objectives.
+There are two search forms, one that lets you search by doctor name, and another that lets you search by a keyword.
 
-The search API call uses the 'query' paramater of the 'doctor search' operation, which searches every single field (practice name, description, etc..) for the search term. This has some interesting effects. Among others, searching a random name may not always return information on a doctor with that name. Essentially this search doesn't always return the most relevant result, because it is broad in its scope.
+The name search API call uses the 'name' paramater of the 'doctor search' operation. It returns a list of doctors with the name you searched for.
+
+The keyword search API call uses the 'query' paramater of the 'doctor search' operation. It returns a list of doctors that contain the keyword at some point in their information. Keep in mind that the displayed information is filtered down, so the keyword may not appear in the information you see.
 
 
 ## Setup
@@ -36,7 +38,7 @@ If there are no results for the search term, the site tells the user there are n
 
 ## Known Bugs
 
-If a search term has no results, the site will not update correctly if the following search terms do have results. It will only update if the following search terms also have no results.
+None.
 
 ## Technologies Used
 
